@@ -10,9 +10,9 @@ export type SomeActions = { type: SomeActionsNamesEnum; payload: number } | {
     payload: string
 };
 
-export type DelegationDispatch = (action: SomeActions) => void;
+export type SomeDispatch = (action: SomeActions) => void;
 
 export type SameStore = {
     state: SomeState;
-    dispatch: DelegationDispatch;
+    dispatch: SomeDispatch;
 };
